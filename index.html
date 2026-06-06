@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LLMS.txt Launch Kit</title>
+    <meta name="description" content="A local-first generator and validator for clean llms.txt files.">
+    <link rel="alternate" type="text/markdown" href="./llms.txt" title="LLMS.txt">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #16201c;
+        --muted: #5d6a63;
+        --line: #d9e3dc;
+        --bg: #f7fbf8;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-2: #b45309;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.55;
+      }
+
+      main {
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+
+      .hero {
+        display: grid;
+        gap: 28px;
+        grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+        align-items: center;
+        min-height: 58vh;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(42px, 7vw, 76px);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 24px;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .lead {
+        margin-top: 22px;
+        max-width: 660px;
+        color: var(--muted);
+        font-size: 20px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent);
+      }
+
+      .terminal {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #0f1714;
+        color: #e7f6ee;
+        box-shadow: 0 16px 40px rgba(22, 32, 28, 0.12);
+      }
+
+      .terminal header {
+        display: flex;
+        gap: 6px;
+        padding: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #f87171;
+      }
+
+      .dot:nth-child(2) {
+        background: #fbbf24;
+      }
+
+      .dot:nth-child(3) {
+        background: #34d399;
+      }
+
+      pre {
+        margin: 0;
+        padding: 20px;
+        overflow-x: auto;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 42px;
+      }
+
+      .card {
+        min-height: 180px;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      .card strong {
+        color: var(--accent-2);
+      }
+
+      @media (max-width: 820px) {
+        .hero,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        main {
+          padding-top: 36px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>LLMS.txt Launch Kit</h1>
+          <p class="lead">Generate and validate clean AI-friendly context files from URL lists, local Markdown, or sitemaps.</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/758302-tech/llms-txt-launch-kit">GitHub sample</a>
+            <a class="button secondary" href="./llms.txt">View llms.txt</a>
+          </div>
+        </div>
+        <div class="terminal" aria-label="CLI example">
+          <header>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </header>
+          <pre>python3 tools/llms_kit.py generate \
+  --title "Acme SaaS" \
+  --description "Acme helps teams ship docs." \
+  --url-list examples/url-list.txt \
+  --output-dir public
+
+python3 tools/llms_kit.py validate public/llms.txt</pre>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Included assets">
+        <article class="card">
+          <h2>Local CLI</h2>
+          <p><strong>No API key.</strong> Generate from URL lists, local Markdown, or a sitemap, then validate before publishing.</p>
+        </article>
+        <article class="card">
+          <h2>Reviewable</h2>
+          <p><strong>Plain files.</strong> Keep the workflow local and inspect every URL before anything goes live.</p>
+        </article>
+        <article class="card">
+          <h2>Free Sample</h2>
+          <p><strong>Start small.</strong> The free repo includes the core CLI, sample URL list, example output, and CI check.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+# url | title | description | section
+/docs/getting-started.md | Getting Started | Account setup, first project creation, and core workflow. | Docs
+/pricing.md | Pricing | Current plans, limits, billing cadence, and upgrade notes. | Docs
+/security.md | Security | Data handling, access control, encryption, and compliance overview. | Docs
+/help.md | Help Center | Customer support articles and troubleshooting paths. | Support
+https://status.acme.example/index.md | Status | Service status and incident history. | Support

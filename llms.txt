@@ -1,0 +1,21 @@
+# LLMS.txt Launch Kit
+
+> LLMS.txt Launch Kit is a local-first generator, validator, and example workflow for publishing clean llms.txt files.
+
+Use these links to understand the free sample repo, CLI, examples, and release notes.
+
+## Project
+
+- [README](https://github.com/758302-tech/llms-txt-launch-kit/blob/main/README.md): Quick start, purpose, included files, and publishing notes.
+- [GitHub Repository](https://github.com/758302-tech/llms-txt-launch-kit): Public free sample repository for the launch kit.
+- [GitHub Pages](https://758302-tech.github.io/llms-txt-launch-kit/): Lightweight public product page for the free sample.
+
+## Tools
+
+- [CLI](https://github.com/758302-tech/llms-txt-launch-kit/blob/main/tools/llms_kit.py): Dependency-free Python generator and validator.
+- [Example URL List](https://github.com/758302-tech/llms-txt-launch-kit/blob/main/examples/url-list.txt): Pipe-delimited URL list used to generate a sample llms.txt.
+- [Example Output](https://github.com/758302-tech/llms-txt-launch-kit/blob/main/examples/free-saas-llms.txt): Spec-shaped SaaS/docs llms.txt example.
+
+## Automation
+
+- [Validation Workflow](https://github.com/758302-tech/llms-txt-launch-kit/blob/main/.github/workflows/validate-example.yml): GitHub Actions workflow that validates the example llms.txt file.

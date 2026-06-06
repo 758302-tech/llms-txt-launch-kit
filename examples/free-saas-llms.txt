@@ -1,0 +1,14 @@
+# Example SaaS
+
+> Example SaaS helps product teams publish customer-facing documentation and keep AI assistants pointed at the right resources.
+
+## Docs
+
+- [Getting Started](https://acme.example/docs/getting-started.md): Account setup, first project creation, and core workflow.
+- [Pricing](https://acme.example/pricing.md): Current plans, limits, billing cadence, and upgrade notes.
+- [Security](https://acme.example/security.md): Data handling, access control, encryption, and compliance overview.
+
+## Support
+
+- [Help Center](https://acme.example/help.md): Customer support articles and troubleshooting paths.
+- [Status](https://status.acme.example/index.md): Service status and incident history.

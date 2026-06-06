@@ -1,0 +1,21 @@
+name: Validate example llms.txt
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate example
+        run: python3 tools/llms_kit.py validate examples/free-saas-llms.txt
