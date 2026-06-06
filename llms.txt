@@ -9,6 +9,7 @@ Use these links to understand the free sample repo, CLI, examples, and release n
 - [README](https://github.com/758302-tech/llms-txt-launch-kit/blob/main/README.md): Quick start, purpose, included files, and publishing notes.
 - [GitHub Repository](https://github.com/758302-tech/llms-txt-launch-kit): Public free sample repository for the launch kit.
 - [GitHub Pages](https://758302-tech.github.io/llms-txt-launch-kit/): Lightweight public product page for the free sample.
+- [Full Pack](https://boltonmejia.gumroad.com/l/llms-txt-launch-kit): Paid Gumroad listing with editable templates, checklists, prompts, GitHub Actions, and an llms-full.txt pattern.
 
 ## Tools
 

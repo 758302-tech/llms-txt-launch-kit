@@ -77,7 +77,7 @@ The full LLMS.txt Launch Kit includes:
 - GitHub Actions workflow
 - minimal `llms-full.txt` example
 
-Full pack link will be added after the paid listing is live.
+Full pack: https://boltonmejia.gumroad.com/l/llms-txt-launch-kit
 
 ## Important
 
